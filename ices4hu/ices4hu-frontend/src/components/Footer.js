@@ -8,10 +8,15 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#000000',
         color: '#FFFFFF',
         padding: theme.spacing(2),
-        position: 'absolute',
+        position: 'fixed',
         bottom: 0,
         left: 0,
         width: '100%',
+        height: '50px',
+        zIndex: 100,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
       },
 }));
 

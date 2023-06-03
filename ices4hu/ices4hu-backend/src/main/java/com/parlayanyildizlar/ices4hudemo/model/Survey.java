@@ -10,30 +10,50 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Survey {
     
     @Id
-    private ObjectId surveyID;
+    private ObjectId _id;
 
-    private ObjectId createdBy;
+    private String surveyID;
+    private String createdBy;
+    private String lectureCode;
     private List<Question> questions;
 
     public Survey(){}
-    public Survey(ObjectId createdBy, List<Question> questions){
+    public Survey(String createdBy, String lectureCode, List<Question> questions){
         this.createdBy = createdBy;
         this.questions = questions;
+        this.lectureCode = lectureCode;
+        this.surveyID = _id.toHexString();
     }
 
-    public ObjectId getSurveyID() {
+    public String getLectureCode() {
+        return this.lectureCode;
+    }
+
+    public void setLectureCode(String lectureCode) {
+        this.lectureCode = lectureCode;
+    }
+
+    public ObjectId get_id() {
+        return this._id;
+    }
+
+    public void set_id(ObjectId _id) {
+        this._id = _id;
+    }
+
+    public String getSurveyID() {
         return this.surveyID;
     }
 
-    public void setSurveyID(ObjectId surveyID) {
+    public void setSurveyID(String surveyID) {
         this.surveyID = surveyID;
     }
 
-    public ObjectId getCreatedBy() {
+    public String getCreatedBy() {
         return this.createdBy;
     }
 
-    public void setCreatedBy(ObjectId createdBy) {
+    public void setCreatedBy(String createdBy) {
         this.createdBy = createdBy;
     }
 

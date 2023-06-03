@@ -1,8 +1,12 @@
 package com.parlayanyildizlar.ices4hudemo.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document(collection = "users")
 public class User {
@@ -17,18 +21,58 @@ public class User {
     private String phoneNumber;
     private String userType;
 
+    // For students
+    private boolean isBanned;
+    @Field(value = "enrolledLectures")
+    private List<String> enrolledLectures = new ArrayList<>();
+
+    @Field(value = "completedSurveys")
+    private List<String> completedSurveys = new ArrayList<>();
+
+
     // Default constructor
     public User() {
     }
 
     // Constructor with fields
-    public User(String firstName, String lastName, String email, String password) {
+    public User(String lastName, String firstName, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.phoneNumber = null;
-        this.userType="student";
+        this.phoneNumber = "";
+        this.userType = "student";
+        this.isBanned = false;
+    }
+
+    
+
+    public List<String> getCompletedSurveys() {
+        return completedSurveys;
+    }
+
+    public void setCompletedSurveys(List<String> completedSurveys) {
+        this.completedSurveys = completedSurveys;
+    }
+
+    public boolean getIsBanned() {
+        return isBanned;
+    }
+
+    public void setIsBanned(boolean isBanned) {
+        this.isBanned = isBanned;
+    }
+
+    public void setBanned(boolean isBanned) {
+        this.isBanned = isBanned;
+    }
+
+    public List<String> getEnrolledLectures() {
+        return enrolledLectures;
+    }
+
+    public void setEnrolledLectures(List<String> enrolledLectures) {
+        this.enrolledLectures = enrolledLectures;
     }
 
     // Getters and setters

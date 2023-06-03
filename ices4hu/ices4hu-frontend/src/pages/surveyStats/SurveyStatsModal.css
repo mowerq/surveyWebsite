@@ -1,0 +1,110 @@
+.modal-background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+.modal-background.dark-theme button{
+    color: #dedede;
+}
+
+.bottom-close-button {
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.close-button-title-div {
+    display: flex;
+    flex-direction: row;    
+}
+.close-button{
+    height: 40px;
+    width: 40px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+.bottom-close-button.light-theme:hover{
+    background-color: white;
+}
+.bottom-close-button.dark-theme:hover{
+    background-color: #222222;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.title.dark-theme h4{
+    font-weight: 400;
+    color:#dedede;
+}
+.title.light-theme h4{
+    color:#000000;
+    font-weight: 400;
+}
+
+.modal-container{
+    overflow: hidden;
+    height: 700px;
+    width: 700px;
+    border-radius: 12px;
+    box-shadow:rgba(0, 0, 0, 0.6) 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.modal-container.dark-theme{
+    background-color: #222222;
+}
+.modal-container.light-theme{
+    background-color: #ffffff;
+}
+
+.question-pie-chart-div{
+    flex: 80%;
+    transform: scale(1.2);
+}
+
+.modal-container .body{
+    display: flex;
+    flex-direction: row;
+    flex: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.left-arrow{
+    z-index: 1;
+    flex: 5%;
+    width: 20px;
+    font-size: 0.9em;
+    background: none;
+}
+.right-arrow{
+    z-index: 1;
+    width: 20px;
+    flex: 5%;
+    font-size: 0.9em;
+    background: none;
+}
+
+.bottom-div{
+    display: flex;
+    flex: 5%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

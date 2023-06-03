@@ -1,0 +1,109 @@
+textarea::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.feedback-card {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 450px;
+    border-radius: 3%;
+    box-shadow: 10px 10px 10px;
+    overflow: hidden;
+}
+
+.feedback-card.ligt-theme {
+    background: #ffffff;
+}
+.feedback-card.dark-theme {
+    background: #dedede;
+}
+
+.card-title {
+    padding-left: 20px;
+    background: #7a4f99;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    
+}
+
+h3 {
+    padding-left: 15px;
+    color: #ffffff;
+}
+.dark-theme h3{
+    color:#dedede;
+}
+
+.subject-input{
+    font-size: large;
+    padding: 10px;
+    margin: 10px 20px 0 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-bottom: solid 1px;
+    border-color: rgb(163, 163, 163);
+    resize: none;
+}
+
+.subject-input.dark-theme{
+    background-color: #dedede;
+}
+.subject-input.light-theme{
+    background-color: #ffffff;
+}
+
+
+.message-textarea{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 20px 20px 20px;
+    padding: 10px;
+    height: 100%;
+    border: none;
+    resize: none;
+}
+
+.message-textarea.dark-theme{
+    background-color: #dedede;
+}
+.message-textarea.light-theme{
+    background-color: #ffffff;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.send-button-div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send-button{
+    font-size: 15px;
+    height: 35px;
+    width: 90px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #7a4f99;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover.light-theme{
+    background-color: #9a70b8;
+}
+
+button:hover.dark-theme{
+    background-color: #9a70b8;
+}

@@ -56,15 +56,15 @@ export const Input = styled.input`
 
 export const SubmitButton = styled.button`
   width: 100%;
-  padding: 11px 40%;
   color: #fff;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
   border: none;
   border-radius: 100px 100px 100px 100px;
   cursor: pointer;
   transition: all, 240ms ease-in-out;
-  background: rgb(85, 37, 134);
   background: linear-gradient(
     58deg,
     rgba(85, 37, 134, 1) 20%,
@@ -73,6 +73,11 @@ export const SubmitButton = styled.button`
 
   &:hover {
     filter: brightness(1.4);
+    background: linear-gradient(
+      58deg,
+      rgba(85, 37, 134, 1) 20%,
+      rgba(181, 137, 214, 1) 100%
+    );
   }
 
   &:active {

@@ -4,22 +4,28 @@ import { AccountBox } from "./components/accountBox";
 import Header from "./components/Header"
 import Footer from "./components/Footer";
 
+
 const AppContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #fff
 `;
 
 function App() {
+
   return (
-    <AppContainer>
+    <div>
       <Header/>
-      <AccountBox />
-      <Footer/>
-    </AppContainer>
+      <AppContainer>
+        <AccountBox />
+        <Footer/>
+      </AppContainer>
+    </div>
+    
   );
 }
 

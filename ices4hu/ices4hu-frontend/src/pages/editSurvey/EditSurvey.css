@@ -1,0 +1,287 @@
+.questionsContainer {
+    min-height: 100vh;
+	padding-bottom: 60px;
+}
+
+.questionsContainer.light-theme {
+	background-color: #f4edff;
+}
+.questionsContainer.dark-theme {
+	background-color: #222222;
+}
+
+.questionText.light-theme{
+	color:#222222;
+}
+
+.questionText.dark-theme{
+	color:#c1c1c1;
+}
+
+.optionText.light-theme{
+	color:#222222;
+}
+
+.optionText.dark-theme{
+	color:#c1c1c1;
+}
+
+
+.above-question-buttons-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.duplicate-button {
+	display: flex;
+  	justify-content: center;
+	font-weight: bold;
+}
+
+.duplicate-button.light-theme {
+	color: black;
+	background-color: #dfcbff;
+}
+
+.duplicate-button.dark-theme {
+	color: black;
+	background-color: #c1c1c1;
+}
+
+.duplicate-button.light-theme:hover {
+	color: white;
+	background-color: rgb(139, 85, 186);
+}
+
+.duplicate-button.dark-theme:hover {
+	color: #c1c1c1;
+	background-color: #222222;
+}
+
+.replace-button {
+	display: flex;
+  	justify-content: center;
+	font-weight: bold;
+}
+
+.replace-button.light-theme {
+	color: black;
+	background-color: #dfcbff;
+}
+
+.replace-button.dark-theme {
+	color: black;
+	background-color: #c1c1c1;
+}
+
+.replace-button.light-theme:hover {
+	color: white;
+	background-color: rgb(128, 74, 175);
+}
+
+.replace-button.dark-theme:hover {
+	color: #c1c1c1;
+	background-color: #222222;
+}
+
+.save-button-div {
+	display: flex;
+	justify-content: center;
+}
+
+.save-button {
+	display: flex;
+	justify-content: center;
+	margin-left: 60px;
+}
+
+h1.light-theme{
+	padding-top: 50px;
+}
+
+h1.dark-theme{
+	padding-top: 50px;
+}
+
+
+.save-button.light-theme:hover {
+	color: white;
+	background-color: rgb(156, 106, 200);
+}
+
+.save-button.dark-theme:hover {
+	color: aliceblue;
+	background-color: #303030;
+}
+
+.back-button {
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+}
+
+.back-button.light-theme{
+	background-color: #dfcbff;
+}
+
+.back-button.light-theme:hover {
+	color: white;
+	background-color: rgb(107, 41, 165);
+}
+
+.back-button.dark-theme:hover {
+	color: aliceblue;
+	background-color: #303030;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.noselect.dark-theme{
+	background-color: #c1c1c1;
+}
+.noselect.light-theme{
+	background-color: #dfcbff;
+}
+.noselect.dark-theme:hover{
+	background-color: #222222;
+}
+.noselect.light-theme:hover{
+	background-color: rgb(104, 40, 160);
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button, button span {
+	transition: 200ms;
+}
+
+button .text {
+	transform: translateX(35px);
+	color: #2a2a2a;
+	font-weight: bold;
+}
+
+button .icon {
+	position: absolute;
+	border-left: 1px solid #2a2a2a;
+	transform: translateX(110px);
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button svg {
+	width: 15px;
+	fill: #222222;
+}
+
+button.light-theme:hover svg{
+	fill: #ffffff;
+}
+
+button.dark-theme:hover svg{
+	fill: #c1c1c1;
+}
+
+button.light-theme:hover {
+	background: rgb(107, 41, 165);
+}
+button.dark-theme:hover {
+	background: #222222;
+}
+
+button:hover .text {
+	color: transparent;
+}
+
+button:hover .icon {
+	width: 150px;
+	border-left: none;
+	transform: translateX(0);
+    
+}
+
+button:focus {
+	outline: none;
+}
+
+.new-question-button {
+	position: fixed;
+	width:60px;
+	height:60px;
+	bottom:60px;
+	right:40px;
+	display: flex;
+	justify-content: center;
+	border-radius: 60%;
+	font-size: 2.5rem;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
+.light-theme h1 {
+	color: #2E3C40;
+}
+.dark-theme h1 {
+	color: aliceblue;
+}
+
+.new-question-button:hover {
+	color: aliceblue;
+	background-color: #303030;
+}
+
+div#options-buttons-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+}
+
+div#options-buttons-container button {
+	display: flex;
+	justify-content: center;
+	background-color: #7066e0;
+	color: rgb(245, 245, 245);
+}
+
+div#options-container {
+	display: flex;
+	flex-direction: column;
+}
+
+div#options-container input{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	margin: 8px;
+}
+
+.textInput {
+	min-height: 5rem;
+	resize: none;
+}

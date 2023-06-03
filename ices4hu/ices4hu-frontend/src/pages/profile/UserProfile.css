@@ -1,0 +1,42 @@
+.user-profile {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-info label {
+    font-weight: bold;
+    width: 120px;
+  }
+  
+  .user-info span {
+    margin-left: 10px;
+  }
+  
+  .user-info ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .user-info ul li {
+    list-style-type: disc;
+  }
+
+  #enrolled_list {
+    height: 30px; /* Set your desired width */
+    padding-left: 0px !important;
+  }
+  
+  .content {
+    margin-top: 60px; /* Adjust the margin top value to leave space for the header */
+  }
