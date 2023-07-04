@@ -4,10 +4,8 @@ import React, { useEffect, useState } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 import logo from "../logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faUser, faEnvelope, faRightFromBracket, faChartSimple } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faUser, faEnvelope, faRightFromBracket, faChartSimple, faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 import { useLocation } from "react-router-dom";
-import NightlightIcon from '@mui/icons-material/Nightlight';
-import LightModeIcon from '@mui/icons-material/LightMode';
 import { useNavigate } from "react-router-dom";
 
 
@@ -244,7 +242,7 @@ export default function Header({ onThemeChange }) {
           aria-label="toggle-theme"
           onClick={toggleTheme}
         >
-          {isDarkTheme ? <NightlightIcon /> : <LightModeIcon />}
+          {isDarkTheme ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
         </IconButton>
       </div>
     </div>

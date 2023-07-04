@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './UserProfile.css';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import { Typography, TextField, Button, Paper, Container, List, ListItem, ListItemText } from '@material-ui/core';
+import { Typography, TextField, Button, Paper, List, ListItem, ListItemText } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Swal from 'sweetalert2';

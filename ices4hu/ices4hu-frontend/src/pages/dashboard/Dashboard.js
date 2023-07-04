@@ -6,13 +6,6 @@ import styled from "styled-components";
 import './Dashboard.css';
 import api from '../../api/axiosConfig';
 import Swal from "sweetalert2";
-import AddUser from "../../components/helpers/AddUser";
-import UserFinder from "../../components/helpers/UserFinder";
-import DeleteUser from "../../components/helpers/DeleteUser";
-import EnrollStudent from "../../components/helpers/EnrollStudent";
-import EnrolledLectures from "../../components/helpers/EnrolledLectures";
-import BanUser from "../../components/helpers/BanUser";
-import { Paper } from "@material-ui/core";
 
 
 const AppContainer = styled.div`
@@ -32,7 +25,6 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const [surveys, setSurveys] = useState([]);
   const [creators, setCreators] = useState([]);
-  const [studentEmail, setStudentEmail] = useState('');
   const [websiteTheme, setWebsiteTheme] = useState(localStorage.getItem('theme'));
   const handleThemeChange = (newTheme) => {
     localStorage.setItem('theme', newTheme);
