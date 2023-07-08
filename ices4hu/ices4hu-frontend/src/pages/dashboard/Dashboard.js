@@ -192,7 +192,16 @@ const Dashboard = () => {
         <Footer/>
       </AppContainer>
     );
-  }  else {
+  }  else if (user.userType === "admin") {
+    return (
+      <AppContainer>
+        <Header onThemeChange={handleThemeChange}/>
+        <h1 style={{paddingTop:"200px", color:"white"}}>Welcome To The Admin Dashboard</h1>
+        <Footer/>
+      </AppContainer>
+    )
+  }
+  else {
     return (
       <AppContainer>
         <Header onThemeChange={handleThemeChange}/>
